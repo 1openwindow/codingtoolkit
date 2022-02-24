@@ -1,7 +1,11 @@
 {
   "name": "codingtoolkit",
-  "displayName": "CodingToolkit",
+  "displayName": "Coding Toolkit",
   "description": "A set of tools that help developers to write code efficiently.",
+  "author": {
+    "name": "Zihong"
+  },
+  "publisher": "HappyHong",
   "version": "0.6.1",
   "engines": {
     "vscode": "^1.64.0"
@@ -10,14 +14,14 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:codingtoolkit.helloWorld"
+    "onCommand:codingtoolkit.copyPermalink"
   ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "codingtoolkit.helloWorld",
-        "title": "Hello World"
+        "command": "codingtoolkit.copyPermalink",
+        "title": "Coding Toolkit: Copy Github Permalink"
       }
     ]
   },
@@ -47,5 +51,9 @@
     "webpack": "^5.69.1",
     "webpack-cli": "^4.9.2",
     "@vscode/test-electron": "^2.1.2"
+  },
+  "dependencies": {
+    "await-spawn": "^4.0.2",
+    "child_process": "^1.0.2"
   }
 }
