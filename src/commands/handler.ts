@@ -10,12 +10,16 @@ export async function copyPermalink(): Promise<void> {
     const branch = getBranch();
 
     try {
-      const url = await permalink.get(branch);
+      const url = await permalink.getPermalink(branch);
 
       vscode.env.clipboard.writeText(url);
-      vscode.window.showInformationMessage(`Copied permalink to ${branch}.`);
+      vscode.window.showInformationMessage(`Copied permalink ${url} from ${branch}.`);
     } catch (error) {
-      //vscode.window.showWarningMessage(error.message);
+      let errorMessage: string = "Failed to copy permalink";
+      if (error instanceof Error) {
+        errorMessage = error.message;
+      }
+      vscode.window.showWarningMessage(errorMessage);
     }
   }
 }

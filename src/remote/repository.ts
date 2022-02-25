@@ -11,11 +11,18 @@ export class Repository {
     return this.parseConfig(config);
   }
 
-  async shaMaster(branch: string): Promise<{ sha: string }> {
+  async shaMaster(branch: string): Promise<string> {
     const git = childProcess.execSync(`cd ${this.path} && git rev-parse ${branch}`);
     const sha = git.toString();
 
-    return { sha: sha.trim() };
+    return sha.trim();
+  }
+
+  async rootUri(): Promise<string>{
+    const git = childProcess.execSync(`cd ${this.path} && git rev-parse --show-toplevel`);
+    const rootUri = git.toString();
+
+    return rootUri.trim();;
   }
 
   private parseConfig(output: string): { domain: string, owner: string, name: string } {
