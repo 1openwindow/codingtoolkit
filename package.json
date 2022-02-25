@@ -7,14 +7,14 @@
   },
   "icon": "img/icon.png",
   "homepage": "https://github.com/1openwindow/codingtoolkit",
-	"bugs": {
-		"url": "https://github.com/1openwindow/codingtoolkit/issues"
-	},
-	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/1openwindow/codingtoolkit"
-	},
+  "bugs": {
+    "url": "https://github.com/1openwindow/codingtoolkit/issues"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/1openwindow/codingtoolkit"
+  },
   "publisher": "HappyHong",
   "version": "0.6.1",
   "engines": {
