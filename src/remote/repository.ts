@@ -18,11 +18,16 @@ export class Repository {
     return sha.trim();
   }
 
-  async rootUri(): Promise<string>{
+  async rootUri(): Promise<string> {
     const git = childProcess.execSync(`cd ${this.path} && git rev-parse --show-toplevel`);
     const rootUri = git.toString();
 
     return rootUri.trim();;
+  }
+
+  async remoteUri(): Promise<string> {
+    const { domain, owner, name } = await this.config();
+    return `https://${domain}/${owner}/${name}`;
   }
 
   private parseConfig(output: string): { domain: string, owner: string, name: string } {

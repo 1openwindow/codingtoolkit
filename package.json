@@ -24,7 +24,9 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:codingtoolkit.copyPermalink"
+    "onCommand:codingtoolkit.copyPermalink",
+    "onCommand:codingtoolkit.goToRemoteRepo",
+    "onCommand:codingtoolkit.goToRemoteFile"
   ],
   "main": "./dist/extension.js",
   "contributes": {
@@ -32,6 +34,14 @@
       {
         "command": "codingtoolkit.copyPermalink",
         "title": "Coding Toolkit: Copy Github Permalink"
+      },
+      {
+        "command": "codingtoolkit.goToRemoteRepo",
+        "title": "Coding Toolkit: Go To Remote Repo"
+      },
+      {
+        "command": "codingtoolkit.goToRemoteFile",
+        "title": "Coding Toolkit: Go To Remote File"
       }
     ]
   },
