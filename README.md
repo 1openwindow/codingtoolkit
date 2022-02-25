@@ -10,4 +10,6 @@
 ## Tools
 - [x] feature: copy github permalink
   - [ ] suuport specified branch, by default, the permalink is generated from origin/head branch.
+- [x] feature: go to remote repo
+- [x] feature; go to remote file
 - [ ] feature: url escape

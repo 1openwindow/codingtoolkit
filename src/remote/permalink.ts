@@ -23,10 +23,17 @@ export class Permalink {
     return `https://${domain}/${owner}/${name}/blob/${sha}/${file}#L${start}-L${end}`;
   }
 
+  async getRemoteFile(branch: string): Promise<string> {
+    const { domain, owner, name } = await this.repository.config();
+    const sha = await this.repository.shaMaster(branch);
+    const file = await this.getRativePath();
+
+    return `https://${domain}/${owner}/${name}/blob/${sha}/${file}`;
+  }
+
   private async getRativePath(): Promise<string> {
     const rootUri = await this.repository.rootUri();
     const normalAbsolutePath = this.normalizePath(this.absolutePath);
-    //const indexOf = normalAbsolutePath.indexOf(rootUri);
     const relativePath = normalAbsolutePath.slice(rootUri.length);
 
     return relativePath;
