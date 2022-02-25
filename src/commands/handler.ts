@@ -25,5 +25,5 @@ export async function copyPermalink(): Promise<void> {
 }
 
 function getBranch(): string {
-	return vscode.workspace.getConfiguration('codingtoolkit').get('branch') || 'origin/master';
+	return 'origin/head';
 }

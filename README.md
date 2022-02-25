@@ -9,5 +9,5 @@
   - Permalink sample: `https://github.com/1openwindow/codingtoolkit/blob/66d186c0d65ac33e7e07e6679e59d97e77fdbc55/src/extension.ts#L4-L8`
 ## Tools
 - [x] feature: copy github permalink
-  - [ ] suuport specified branch, by default, the permalink is generated from origin/master branch.
+  - [ ] suuport specified branch, by default, the permalink is generated from origin/head branch.
 - [ ] feature: url escape
