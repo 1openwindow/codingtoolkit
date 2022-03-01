@@ -14,21 +14,21 @@
   - The GitHub permalink is auto generated and copied.
     - Permalink sample: `https://github.com/1openwindow/codingtoolkit/blob/66d186c0d65ac33e7e07e6679e59d97e77fdbc55/src/extension.ts#L4-L8`
 
-![Demo](https://github.com/1openwindow/codingtoolkit/blob/main/img/copypermalink.gif?raw=true)
+![Demo](https://github.com/1openwindow/codingtoolkit/blob/main/gif/copypermalink.gif?raw=true)
 
 - go to remote repo
   - Open command pallete (with **Cmd-Shift-P** or **⇧⌘P**).
   - Type in "**Coding Toolkit: Go To Remote Repo**" and select it.
   - The remore repo uri will be opened in default browser.
 
-![Demo](https://github.com/1openwindow/codingtoolkit/blob/main/img/gotoremoterepo.gif?raw=true)
+![Demo](https://github.com/1openwindow/codingtoolkit/blob/main/gif/gotoremoterepo.gif?raw=true)
 
 - go to remote file
   - Open command pallete (with **Cmd-Shift-P** or **⇧⌘P**).
   - Type in "**Coding Toolkit: Go To Remote File**" and select it.
   - The selected file will be opened in browser.
 
-![Demo](https://github.com/1openwindow/codingtoolkit/blob/main/img/gotoremotefile.gif?raw=true)
+![Demo](https://github.com/1openwindow/codingtoolkit/blob/main/gif/gotoremotefile.gif?raw=true)
 
 ## Issues
 Submit the [issues](https://github.com/1openwindow/codingtoolkit/issues) if you find any bug or have any suggestion.
