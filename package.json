@@ -16,7 +16,7 @@
     "url": "https://github.com/1openwindow/codingtoolkit"
   },
   "publisher": "HappyHong",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.64.0"
   },
